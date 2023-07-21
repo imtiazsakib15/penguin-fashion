@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
+  <body class="font-roboto">
+    <header class="bg-slate-500">
+      <div class="max-w-7xl mx-auto">
+        <nav
+          class="flex flex-col md:flex-row items-center gap-5 justify-between text-center px-10 sm:px-20 py-8"
+        >
+          <img class="w-64 mx-auto md:mx-0" src="icons/logo.png" alt="logo" />
+          <ul class="flex flex-col sm:flex-row gap-3 text-white">
+            <li><a class="px-5 py-3" href="">Home</a></li>
+            <li><a class="px-5 py-3" href="">Product</a></li>
+            <li><a class="px-5 py-3" href="">About Us</a></li>
+            <li><a class="px-5 py-3" href="">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-col md:flex-row items-center gap-10 sm:px-20 text-center md:text-left"
+        >
+          <div class="md:w-6/12 space-y-5">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bebas">
+              <span class="text-[#A4BC46]">Be the Penguins</span> <br />of
+              Winter
+            </h1>
+            <p class="text-white w-10/12 mx-auto md:mx-0">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </p>
+            <button
+              class="px-6 py-4 bg-[#A4BC46] text-white font-medium rounded-md"
+            >
+              <img
+                class="w-8 inline pr-2"
+                src="icons/shopping-cart.png"
+                alt=""
+              />Buy Now
+            </button>
+          </div>
+          <div class="md:w-6/12">
+            <img class="w-full" src="images/men.jpg" alt="men" />
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
